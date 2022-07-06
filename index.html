@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      color: purple;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 800;
+      background-image: url("");
+    }
+
+    .cont { ;
+      color: rgb(0, 128, 117);
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 800;
+      background-image: url("");
+    }
+
+    .car {
+      color: rgb(136, 9, 30);
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 40px;
+    }
+
+    .cart {
+      background-color: aqua;
+    }
+
+    .cro {
+      color: rgb(109, 4, 102);
+      background-color: coral;
+    }
+  </style>
+</head>
+
+<body class="cart">
+  <h1 class="container"> <u> Maths Expressions
+      Familiar operations</u>
+  </h1>
+  <h1 class="cont"> <u> Percentage Calculator</h1></u>
+  <div>
+    <form class="car
+  " onsubmit="Calculate(); return false">
+      <div> <label for="total marks"> Total Marks :</label>
+        <input class="cro" type=" number" min="1" required, name=" Total Marks" placeholder="Enter your total marks here"
+          id="marks">
+      </div> <br>
+      <div><label for="Obtained Marks"> Obtained Marks :</label>
+        <input type=" number" class="cro" min="1" required name=" Marks obtained"
+          placeholder="Enter your obtained marks here" id="grow">
+      </div> <br>
+      <button class="cro" ype="submit" value="calculate">Calculate</button>
+
+    </form>
+  </div>
+  <h1 id="result" class="car"> </h1>
+  <script>
+   
+    function Calculate() {
+      let totalmarks = document.querySelector("#marks").value
+      let marksobtained = document.querySelector("#grow").value
+      let result = marksobtained * 100 / totalmarks
+
+      
+      document.querySelector("#result").innerHTML = "you have got " + result + "%"
+    }
+
+  </script>
+
+
+</body>
+
+</html>
